@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox basics  </title>
+</head>
+<style>
+    #container{
+        display: flex;
+        flex-direction: center;
+        /* flex-wrap: wrap; */
+        /* flex-flow: row wrap; */
+    }
+    .item {
+        background: #f4f4f4;
+        border: #ccc solid 1px;
+        padding: 1rem;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        flex: 1;
+        margin: 0.5rem;
+    }
+    .item:first-child{
+        flex: 3;
+    }
+</style>
+<body>
+    <div id="container">
+        <div class="item"><h3>Item 1</h3></div>
+        <div class="item"><h3>Item 2</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 1</h3></div>
+        <div class="item"><h3>Item 2</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 1</h3></div>
+        <div class="item"><h3>Item 2</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+    </div>
+    
+</body>
+</html>

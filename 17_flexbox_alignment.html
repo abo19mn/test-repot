@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment</title>
+    <style>
+        #container{
+            background: #555;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        /* Зэрэгцүүлэл сонголтууд  
+            flex-start
+            flex-end
+            center
+            space-between
+            space-around
+            space-evenly
+        */
+            height: 600px;
+            /* Босоо тэнхлэгийн дагуу */
+            align-items: baseline;
+        /* Зэрэгцүүлэл сонголтууд  
+            flex-start
+            flex-end
+            center
+            baseline
+            stretch
+        */
+            /* align-content: space-between; */
+        /* Item-- Extre space байгаа тохоилдолд босоо тэнхлэгийн дагуу зэрэгцүүлнэ 
+            flex-start
+            flex-end
+            center
+            space-between
+            space-around
+        */
+        .item-1 {
+            order: 2;
+        }
+        .item-2 {
+            align-self: center;
+            order: 3;
+        }
+        .item-3 {
+            order: 1;
+        }
+
+
+
+        }
+    .item {
+        background: #f4f4f4;
+        border: #ccc solid 1px;
+        padding: 1rem;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0.5rem;
+        flex-basis: 150px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item item-1"><h3>Item1</h3></div>
+        <div class="item item-2"><h3>Item2</h3></div>
+        <div class="item item-3"><h3>Item3</h3></div>
+    </div>    
+</body>
+</html>
